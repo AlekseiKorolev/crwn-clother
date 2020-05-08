@@ -1,4 +1,4 @@
 ### Udemy cap App
 
-- ##### React
-- ##### Sass
+- React
+- Sass
