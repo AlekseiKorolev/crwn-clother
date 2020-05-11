@@ -28,7 +28,7 @@ const App = () => {
       setCurrentUser(userAuth);
     });
     return () => unsubscribeFromAuth(); // ???
-  }, []);
+  }, [currentUser]);
 
   return (
     <div>
