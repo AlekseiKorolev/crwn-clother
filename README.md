@@ -2,6 +2,7 @@
 
 - React
 - Redux
+- Reselect
 - React Router
 - Sass
 - Firebase
