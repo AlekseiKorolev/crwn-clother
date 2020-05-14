@@ -1,8 +1,7 @@
 ### Udemy cap App
 
 - React
-- Redux
-- Reselect
 - React Router
+- Redux (logger, persist, reselect)
 - Sass
-- Firebase
+- Firebase (without back function)
