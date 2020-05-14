@@ -2,6 +2,7 @@
 
 - React
 - React Router
-- Redux (logger, persist, reselect)
+- Redux (logger, _persist_, _reselect_)
 - Sass
 - Firebase (without back function)
+- Stripe (payments)
