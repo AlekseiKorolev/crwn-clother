@@ -17,7 +17,7 @@ import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import { setCurrentUser } from "./redux/user/user.actions";
 
-const App = ({ setCurrentUser, currentUser }) => {
+const App = ({ setCurrentUser, currentUser, collectionsArray }) => {
   useEffect(() => {
     const unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -33,7 +33,7 @@ const App = ({ setCurrentUser, currentUser }) => {
       setCurrentUser(userAuth);
     });
     return () => unsubscribeFromAuth(); // ???
-  }, [setCurrentUser]);
+  }, [collectionsArray, setCurrentUser]);
 
   return (
     <div>
