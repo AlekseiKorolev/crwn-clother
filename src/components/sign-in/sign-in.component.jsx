@@ -12,19 +12,19 @@ import {
 } from "../../redux/user/user.actions";
 
 const SignIn = ({ googleSignInStart, emailSignInStart }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [userCredentials, setCredentials] = useState({
+    email: "",
+    password: ""
+  });
+
+  const { email, password } = userCredentials;
 
   const handleChange = e => {
     const { value, name } = e.target;
-    if (name === "email") {
-      setEmail(value);
-    } else {
-      setPassword(value);
-    }
+    setCredentials({ ...userCredentials, [name]: value });
   };
 
-  const handleSubmit = async event => {
+  const handleSubmit = event => {
     event.preventDefault();
     emailSignInStart(email, password);
   };

@@ -10,29 +10,18 @@ import { signUpStart } from "../../redux/user/user.actions";
 import { SignUpContainer, Title } from "./sign-up.styles";
 
 const SignUp = ({ signUpStart }) => {
-  const [displayName, setDisplayName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [userCredentials, setCredentials] = useState({
+    displayName: "",
+    email: "",
+    password: "",
+    confirmPassword: ""
+  });
+
+  const { displayName, email, password, confirmPassword } = userCredentials;
 
   const handleChange = event => {
     const { name, value } = event.target;
-    switch (name) {
-      case "displayName":
-        setDisplayName(value);
-        break;
-      case "email":
-        setEmail(value);
-        break;
-      case "password":
-        setPassword(value);
-        break;
-      case "confirmPassword":
-        setConfirmPassword(value);
-        break;
-      default:
-        break;
-    }
+    setCredentials({ ...userCredentials, [name]: value });
   };
 
   const handleSubmit = event => {
