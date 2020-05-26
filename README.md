@@ -2,7 +2,7 @@
 
 - [React][1]
 - [React Router][2]
-- [Redux][3] ([logger][4], [thunk][11], [_persist_][5], [_reselect_][6])
+- [Redux][3] ([saga][12], [_persist_][5], [_reselect_][6], [logger][4], ([thunk][11] see another branch))
 - [Styled-components][10] ([Sass][7] see another branch)
 - [Firebase][8] (authentication and database)
 - [Stripe][9] (payments)
@@ -20,4 +20,5 @@ source: [udemy][101]
 [9]: https://stripe.com/
 [10]: https://styled-components.com/
 [11]: https://github.com/reduxjs/redux-thunk
+[12]: https://redux-saga.js.org/
 [101]: https://www.udemy.com/course/complete-react-developer-zero-to-mastery/
