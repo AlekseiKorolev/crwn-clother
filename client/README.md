@@ -6,6 +6,8 @@
 - [Styled-components][10] ([Sass][7] see another branch)
 - [Firebase][8] (authentication and database)
 - [Stripe][9] (payments)
+- [Axios][13]
+- [Express][14] (back-end for stripe)
 
 source: [udemy][101]
 
@@ -21,4 +23,6 @@ source: [udemy][101]
 [10]: https://styled-components.com/
 [11]: https://github.com/reduxjs/redux-thunk
 [12]: https://redux-saga.js.org/
+[13]: https://github.com/axios/axios
+[14]: https://expressjs.com/
 [101]: https://www.udemy.com/course/complete-react-developer-zero-to-mastery/
