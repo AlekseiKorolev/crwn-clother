@@ -1,8 +1,8 @@
 ### Online shop
 
-- [React][1]
+- [React][1], (contextAPI see another branch)
 - [React Router][2]
-- [Redux][3] ([saga][12], [_persist_][5], [_reselect_][6], [logger][4], ([thunk][11] see another branch))
+- [Redux][3] ([saga][12], [_persist_][5], [_reselect_][6], [logger][4], ([thunk][11], [apollo][15] see another branch))
 - [Styled-components][10] ([Sass][7] see another branch)
 - [Firebase][8] (authentication and database)
 - [Stripe][9] (payments)
@@ -25,4 +25,5 @@ source: [udemy][101]
 [12]: https://redux-saga.js.org/
 [13]: https://github.com/axios/axios
 [14]: https://expressjs.com/
+[15]: https://www.apollographql.com/
 [101]: https://www.udemy.com/course/complete-react-developer-zero-to-mastery/
