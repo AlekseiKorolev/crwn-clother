@@ -1,6 +1,6 @@
 ### Online shop
 
-- [React][1], (contextAPI see another branch)
+- [React][1], (hooks, lazy/Suspense, componentDidCatch, contextAPI see another branch)
 - [React Router][2]
 - [Redux][3] ([saga][12], [_persist_][5], [_reselect_][6], [logger][4], ([thunk][11], [apollo][15] see another branch))
 - [Styled-components][10] ([Sass][7] see another branch)
