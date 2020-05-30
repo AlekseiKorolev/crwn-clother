@@ -2,7 +2,7 @@ import React from "react";
 
 import "./homepage.styles.scss";
 
-import { default as Directory } from "../../components/directory/directory.container";
+import Directory from "../../components/directory/directory.component";
 
 const HomePage = () => {
   return (
