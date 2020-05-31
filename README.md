@@ -8,6 +8,7 @@
 - [Stripe][9] (payments)
 - [Axios][13]
 - [Express][14] (back-end for stripe)
+- [Jest][16]
 
 source: [udemy][101]
 
@@ -26,4 +27,5 @@ source: [udemy][101]
 [13]: https://github.com/axios/axios
 [14]: https://expressjs.com/
 [15]: https://www.apollographql.com/
+[16]: https://jestjs.io/
 [101]: https://www.udemy.com/course/complete-react-developer-zero-to-mastery/

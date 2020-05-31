@@ -1,17 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-
-const config = {
-  apiKey: "AIzaSyDbp2aNy6jzGnGH1sNPaWp3OYVzb4KpvlY",
-  authDomain: "crwn-clothing-9a38a.firebaseapp.com",
-  databaseURL: "https://crwn-clothing-9a38a.firebaseio.com",
-  projectId: "crwn-clothing-9a38a",
-  storageBucket: "crwn-clothing-9a38a.appspot.com",
-  messagingSenderId: "1027841984384",
-  appId: "1:1027841984384:web:98f4d8171ab49344c0a365",
-  measurementId: "G-4R8ZGG5S9T"
-};
+import config from "./config";
 
 firebase.initializeApp(config);
 
@@ -80,6 +70,19 @@ export const getCurrentUser = () => {
       resolve(userAuth);
     }, reject);
   });
+};
+
+export const getCart = async userId => {
+  const cartRef = firestore.collection("carts").where("userId", "==", userId);
+  const snapShot = await cartRef.get();
+
+  if (snapShot.empty) {
+    const cartDocRef = firestore.collection("carts").doc();
+    await cartDocRef.set({ userId, cartItems: [] });
+    return cartDocRef;
+  } else {
+    return snapShot.docs[0].ref;
+  }
 };
 
 export const auth = firebase.auth();
